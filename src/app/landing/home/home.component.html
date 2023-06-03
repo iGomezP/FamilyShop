@@ -1,0 +1,177 @@
+<mat-accordion class="home">
+
+	<!-- Quienes somos -->
+	<mat-expansion-panel (opened)="isRotated.quienes = true" (closed)="isRotated.quienes = false" hideToggle>
+		<mat-expansion-panel-header>
+			<mat-panel-title class="title">
+				¿Quiénes somos?
+			</mat-panel-title>
+			<span>
+				<mat-icon [ngClass]="{'normal': !isRotated.quienes, 'rotated': isRotated.quienes}">
+					favorite</mat-icon>
+			</span>
+		</mat-expansion-panel-header>
+		<p class="sub-title">Family Shop! Se creó con la finalidad de ayudar a mujeres a generar un ingreso para su hogar.
+		</p>
+		<p class="sub-title">Buscando siempre marcar la
+			diferencia y mostrar empatía.</p>
+	</mat-expansion-panel>
+
+	<!-- Integrate -->
+	<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+		(opened)="isRotated.integrate = true" (closed)="isRotated.integrate = false" hideToggle>
+		<mat-expansion-panel-header>
+			<mat-panel-title class="title">
+				Integrate con nosotras
+			</mat-panel-title>
+			<span>
+				<mat-icon [ngClass]="{'normal': !isRotated.integrate, 'rotated': isRotated.integrate}">
+					favorite</mat-icon>
+			</span>
+		</mat-expansion-panel-header>
+		<p class="sub-title">
+			Family Shop! Te está esperando.
+		</p>
+		<p class="sub-title">
+			Para ser vendedora por Live los requisitos son:
+		</p>
+		<ul class="lista_family sub-title">
+			<li>
+				• Invitar a 30 personas a unirse al grupo (posibles clientes) para el bien común de todas como
+				vendedoras.
+			</li>
+			<li>
+				• Apoyo a las compañeras en sus Live etiquetando durante todo el live (Revisar apartado "Etiquetas").
+			</li>
+			<li>
+				• Entregar siempre en buen estado sus productos, presentables, con nota desglosando precio y cada
+				artículo
+				adquirido por
+				los clientes.
+			</li>
+			<li>
+				• Dar una cooperación de $30 pesos para la rifa mensual para los clientes.
+			</li>
+			<li>
+				• Se asigna horario para transmitir, dependiendo del apoyo mostrado en la semana.
+			</li>
+			<li>
+				• Importante: NO transmitir en otros grupos.
+
+			</li>
+		</ul>
+	</mat-expansion-panel>
+
+	<!-- Etiquetas -->
+	<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+		(opened)="isRotated.etiquetas = true" (closed)="isRotated.etiquetas = false" hideToggle>
+		<mat-expansion-panel-header>
+			<mat-panel-title class="title">
+				Etiquetas
+			</mat-panel-title>
+			<span>
+				<mat-icon [ngClass]="{'normal': !isRotated.etiquetas, 'rotated': isRotated.etiquetas}">
+					favorite</mat-icon>
+			</span>
+		</mat-expansion-panel-header>
+		<!-- <p class="sub-title">I'm visible because I am open</p> -->
+		<a href="assets/etiquetas.jpg" target="_blank"><img class="img_body" src="assets/etiquetas.jpg"
+				alt="ReglasDeEtiquetas"></a>
+	</mat-expansion-panel>
+
+	<!-- Vendedoras -->
+	<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+		(opened)="isRotated.politicas = true" (closed)="isRotated.politicas = false" hideToggle>
+		<mat-expansion-panel-header>
+			<mat-panel-title class="title">
+				Para Vendedoras
+			</mat-panel-title>
+			<span>
+				<mat-icon [ngClass]="{'normal': !isRotated.politicas, 'rotated': isRotated.politicas}">
+					favorite</mat-icon>
+			</span>
+		</mat-expansion-panel-header>
+		<p class="sub-title">Reglas generales</p>
+		<ul class="lista_family sub-title">
+			<li>• Escoge tu primer horario🥳</li>
+			<li>• Al finalizar el último live del día, Administración envía horarios disponibles, por lo que deberás estar al
+				pendiente
+				para elegir tu primer horario para transmitir. ✅</li>
+			<li>• Deberás etiquetar, interactuar y brindar tiempo de calidad a las compañeras. 🤝</li>
+			<li>• Apoyo equitativo, sí apoyas, se te apoyará. ⚖</li>
+			<li>• Al finalizar tu live, deberás realizar una lista de las compañeras que te apoyaron a etiquetar (revisa el
+				apartado "Etiquetas”, anotando: Tu nombre, fecha y horario de tu live. 🗒
+			</li>
+			<li>• No aplica para etiquetas: compañeras y Administración.</li>
+			<li>• Si alguna compañera está transmitiendo, no se puede escribir en los chats. 🚫</li>
+			<li>• En algunas ocasiones Facebook bloquea nuestros perfiles y no podemos escribir, para ello y seguir apoyando a
+				las
+				compañeras que transmiten, se tiene que compartir el live y tomar evidencia. 📱</li>
+			<li>• En caso de no poder estar activa en el día por alguna causa de fuerza mayor, avisar con anticipación. 😷
+			</li>
+			<li>• Para potenciar tus ventas y/o vistas se sugiere subir tu publicidad individual media hora antes de tu live.
+				👍</li>
+			<li>• No borrar su live, deben dejarlo publicado. 👁️</li>
+			<li>• En caso de no poder realizar tu live deberás avisar con anticipación, para poder llenar ese espacio o
+				modificar horarios.</li>
+			<li>• Tienes 24 horas después de tu live, para enviar cuentas a tus clientes, favor de ser muy responsable en este
+				punto.</li>
+			<li>• Silenciar notificaciones al momento de transmitir.</li>
+			<li>• Dar $30 pesos a la semana para la rifa mensual de clientes. Chicas nuevas en su primer live darán solo $15
+			</li>
+			<li>• Hay sanción de menos tiempo en tu(s) live(s) en caso de llegar tarde al punto de entrega. Tolerancia de 5
+				minutos.</li>
+			<li>• Punto de entrega: DOMINGO sobre el Camellón de Av. Pantitlán y Calle Relox, frente al Honda y Comex, en un
+				horario de
+				11:00 AM – 1:00 PM 📌</li>
+			<li>• NO PUEDES TRANSMITIR EN OTROS GRUPOS.</li>
+		</ul>
+	</mat-expansion-panel>
+
+	<!-- Reglas -->
+	<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+		(opened)="isRotated.reglas = true" (closed)="isRotated.reglas = false" hideToggle>
+		<mat-expansion-panel-header>
+			<mat-panel-title class="title">
+				Reglas para rifas
+			</mat-panel-title>
+			<span>
+				<mat-icon [ngClass]="{'normal': !isRotated.reglas, 'rotated': isRotated.reglas}">
+					favorite</mat-icon>
+			</span>
+		</mat-expansion-panel-header>
+		<!-- <p class="sub-title">I'm visible because I am open</p> -->
+		<a href="assets/rifas.jpg" target="_blank"><img class="img_body" src="assets/rifas.jpg" alt="ReglasDeRifas"
+				oncontextmenu="return false;" ondragstart="return false;"></a>
+	</mat-expansion-panel>
+
+	<!-- Entregas -->
+	<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+		(opened)="isRotated.entregas = true" (closed)="isRotated.entregas = false" hideToggle>
+		<mat-expansion-panel-header>
+			<mat-panel-title class="title">
+				Entrega de pedidos
+			</mat-panel-title>
+			<span>
+				<mat-icon [ngClass]="{'normal': !isRotated.entregas, 'rotated': isRotated.entregas}">
+					favorite</mat-icon>
+			</span>
+		</mat-expansion-panel-header>
+		<p class="sub-title">La presentación de tus productos es tu carta de recomendación.</p>
+		<p class="sub-title">
+			Por lo que deberán ir de la siguiente manera:
+		</p>
+		<ul class="lista_family sub-title">
+			<li>• Ropa limpia y doblada</li>
+			<li>• En bolsa transparente o bolsa tipo boutique</li>
+			<li>• Nota de venta, que deberá incluir:</li>
+			<ul class="lista_family sub-title">
+				<li>🔹Nombre del cliente</li>
+				<li>🔹Nombre de la vendedora</li>
+				<li>🔹Fecha</li>
+				<li>🔹Total desglosado</li>
+			</ul>
+			<li>• Colocar leyenda de "PAGADO" si lo está.</li>
+		</ul>
+	</mat-expansion-panel>
+</mat-accordion>
